@@ -1,7 +1,9 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends Component {
+  render() {
   return (
     <div className="App">
       <header className="App-header">
@@ -9,11 +11,12 @@ function App() {
         <p>
           Hello, World!
         </p>
-        <a href="https:/reactjs.org" className="App-link" target="_blank" rel="noopener noreferrer">Learn React
+        <a href="https:/reactjs.org" className="App-link" target="_blank" rel="noopener noreferrer">
+          Learn React
         </a>
       </header>
     </div>
   );
 }
-
+}
 export default App;
