@@ -10,7 +10,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 ReactDOM.render(
-  <h1>Hello, React!</h1>
+  <h1>Hello, React!</h1>,
   document.getElementById('root')
 );
 
