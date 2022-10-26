@@ -127,7 +127,7 @@ const data = [
 const App = () => {
 	const [ title ] = useState('To-do List created by Lucy');
 	const [ pageNo, setPageNo ] = useState(0);
-	const [ totalRows, selstTotalRows ] = useState(8);
+	const [ totalRows, setTotalRows ] = useState(8);
 	const [ totalPages, setTotalPages ] = useState(1);
 	const [ dataAll, setDataAll ] = useState([]);
 	const [ dataTable, setDataTable ] = useState([]);
@@ -185,7 +185,7 @@ const App = () => {
 				{[...Array(totalPages).keys()].map((pages,i) => (
 					// eslint-disable-next-line react/jsx-no-comment-textnodes
 					<li className="page-item" key={i}>
-            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+           				
             <a className={pageNo===i ? 'page-linkactive':'page-link'} onClick={onPageClick.bind(null,i)}>{i+1}
                         </a>
                         </li>
