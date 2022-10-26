@@ -19,6 +19,8 @@
   "homepage": "https://github.com/tanghereen/junior-dev-vorgwv#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2"
+    "babel-preset-react-app": "^3.1.2",
+    "bootstrap": "^5.2.2",
+    "sass": "^1.55.0"
   }
 }
