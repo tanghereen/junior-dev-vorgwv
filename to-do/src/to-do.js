@@ -125,9 +125,9 @@ const data = [
 ];
 
 const App = () => {
-	const [ title ] = useState('React app (created by Calvin)');
+	const [ title ] = useState('To-do List created by Lucy');
 	const [ pageNo, setPageNo ] = useState(0);
-	const [ totalRows, setTotalRows ] = useState(8);
+	const [ totalRows, selstTotalRows ] = useState(8);
 	const [ totalPages, setTotalPages ] = useState(1);
 	const [ dataAll, setDataAll ] = useState([]);
 	const [ dataTable, setDataTable ] = useState([]);
