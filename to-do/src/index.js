@@ -1,21 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
+import './index.css';
 import App from './App';
-import './App.css';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
+import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-
-ReactDOM.render(
-  <h1>Hello, React!</h1>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+registerServiceWorker();
