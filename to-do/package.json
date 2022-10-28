@@ -9,7 +9,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "material-ui": "^0.19.4",
+    "prop-types": "^15.5.8",
+    "react-swipeable-views": "^0.12.10",
+    "react-transition-group": "^1.2.1",
+    "sort-by": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
