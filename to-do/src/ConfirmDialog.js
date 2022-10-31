@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Dialog from 'material-ui/Dialog';
-import FlatButton from 'material-ui/FlatButton';
 import './App.css';
 
 /**
@@ -36,39 +34,3 @@ const propTypes = {
  * @param {cancelCallback} props.onCancel - The callback to execute when the user hits the cancel button.
  * @param {confirmCallback} props.onConfirm - The callback to execute when the user hits the confirm button.
  */
-function ConfirmDialog(props) {
-
-    // Confirm Dialog buttons
-    const dialogActions = [
-        <FlatButton
-            label="Cancel"
-            className="confirm-dialog"
-            onClick={props.onCancel}
-        />,
-        <FlatButton
-            label="Confirm"
-            backgroundColor="#FF9584"
-            hoverColor="#FF583D"
-            className="confirm-dialog"
-            onClick={props.onConfirm}
-        />,
-    ];
-
-    return (
-        <div>
-            <Dialog
-                title={props.title}
-                actions={dialogActions}
-                modal={true}
-                open={props.open}
-            >
-                {props.message}
-            </Dialog>
-        </div>
-    );
-}
-
-// Type checking the props of the component
-ConfirmDialog.propTypes = propTypes;
-
-export default ConfirmDialog;
